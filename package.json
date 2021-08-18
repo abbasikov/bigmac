@@ -1,0 +1,52 @@
+{
+  "name": "bigmac",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@testing-library/jest-dom": "^5.11.4",
+    "@testing-library/react": "^11.1.0",
+    "@testing-library/user-event": "^12.1.10",
+    "cors": "^2.8.5",
+    "csvtojson": "^2.0.10",
+    "node-iplocate": "^1.0.2",
+    "public-ip": "^4.0.4",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-scripts": "4.0.3",
+    "web-vitals": "^1.0.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "server": "node-env-run backend --exec nodemon",
+    "dev": "run-p server start"
+  },
+  "proxy": "http://localhost:3001/",
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "express": "^4.17.1",
+    "node-env-run": "^4.0.2",
+    "nodemon": "^2.0.12",
+    "npm-run-all": "^4.1.5"
+  },
+  "type": "module"
+}
